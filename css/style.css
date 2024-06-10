@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(101,63,151), rgb(78, 12, 165));
+    min-height: 100vh;
+}
+
+.container {
+    border: 1px solid black;
+    background: rgba(174, 173, 174, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 17px;
+/*     background: linear-gradient(45deg, rgb(2, 1, 46),rgb(52, 52, 52)); */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 39px 30px;
+    width: 580px;
+    min-height: 45vh;
+}
+
+.container input {
+    width: 100%;
+    height: 4rem;
+    margin: 0 13px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px rgb(97, 34, 104);
+    outline: none;
+    background: rgba(174, 173, 174, 0.3);
+    padding: 0px 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.container .crypto {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    height: max-content;
+    padding: 22px;
+    width: 220px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px rgb(0, 0, 75);
+    transition: 0.3s;
+    }
+    
+.cryptos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 430px) {
+    .crypto {
+        margin-top: 20px;
+    }
+}
+
+.container .crypto:hover {
+    box-shadow: 0px 0px 9px rgb(241, 241, 243);
+    cursor: pointer;
+}
+
+.crypto-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: white;
+}
+
+.crypto-info .pairName {
+    font-size: 20px;
+}
+
+.crypto-info .pairVolume  {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.crypto-info .pairPrice {
+    font-size: 24px;
+}
+
+.crypto img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.container input:hover {
+    box-shadow: 0px 0px 6px rgb(205, 205, 238);
+}
+
+.container input:focus {
+    box-shadow: 0px 0px 10px rgb(205, 205, 238);
+}
+
+.container input::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+font-size: 16px;
+}
